@@ -1,0 +1,258 @@
+/* font = Cera PRO */
+@font-face {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./CeraProLight.woff');
+  src: url('./CeraProLight.woff') format('woff'), url('./CeraProLight.ttf') format('truetype');
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./CeraProRegular.woff');
+  src: url('./CeraProRegular.woff') format('woff'), url('./CeraProRegular.ttf') format('truetype');
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./CeraProMedium.woff');
+  src: url('./CeraProMedium.woff') format('woff'), url('./CeraProMedium.ttf') format('truetype');
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+/* font = Arita dotum */
+@font-face {
+  font-family: 'Arita Dotum';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Arita Dotum Light');
+  src: url('./Arita-dotum-Light.woff');
+  src: url('./Arita-dotum-Light.woff') format('woff'), url('./Arita-dotum-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arita Dotum';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./Arita-dotum-Medium.eot');
+  src: url('./Arita-dotum-Medium.eot?#iefix') format('embedded-opentype'), url('./Arita-dotum-Medium.woff') format('woff'), url('./Arita-dotum-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arita Dotum';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./Arita-dotum-SemiBold.eot');
+  src: url('./Arita-dotum-SemiBold.eot?#iefix') format('embedded-opentype'), url('./Arita-dotum-SemiBold.woff') format('woff'), url('./Arita-dotum-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arita Dotum';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./Arita-dotum-Bold.woff');
+  src: url('./Arita-dotum-Bold.woff') format('woff'), url('./Arita-dotum-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arita';
+  src: url('./aritaheiti-light.woff2') format('woff2'),
+    url('./aritaheiti-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arita';
+  src: url('./aritaheiti-medium.woff2') format('woff2'),
+    url('./aritaheiti-medium.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arita';
+  src: url('./aritaheiti-bold.woff2') format('woff2'),
+    url('./aritaheiti-bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arita Dotum 4.0';
+  src: url('./AritaL_v4.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arita Dotum 4.0';
+  src: url('./AritaM_v4.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arita Dotum 4.0';
+  src: url('./AritaSB_v4.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arita Dotum 4.0';
+  src: url('./AritaB_v4.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* font = Arita Buri 
+@font-face {
+  font-family: "Arita Buri";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./Arita-buriL.woff");
+  src: url("./Arita-buriL.woff") format("woff"), url("./Arita-buriL.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Arita Buri";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Arita-buriM.woff");
+  src: url("./Arita-buriM.woff") format("woff"), url("./Arita-buriM.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Arita Buri";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./Arita-buriSB.woff");
+  src: url("./Arita-buriSB.woff") format("woff"), url("./Arita-buriSB.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Arita Buri";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./Arita-buriB.woff");
+  src: url("./Arita-buriB.woff") format("woff"), url("./Arita-buriB.ttf") format("truetype"); }
+*/
+/* font = playfair display 
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/kr/ko/resource/extra/fonts/playfairedisplay/PlayfairDisplay-Regular.woff");
+  src: url("/kr/ko/resource/extra/fonts/playfairedisplay/PlayfairDisplay-Regular.woff") format("woff"), url("/kr/ko/resource/extra/fonts/playfairedisplay/PlayfairDisplay-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/kr/ko/resource/extra/fonts/playfairedisplay/PlayfairDisplay-Bold.woff");
+  src: url("/kr/ko/resource/extra/fonts/playfairedisplay/PlayfairDisplay-Bold.woff") format("woff"), url("/kr/ko/resource/extra/fonts/playfairedisplay/PlayfairDisplay-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/kr/ko/resource/extra/fonts/playfairedisplay/PlayfairDisplay-Black.woff");
+  src: url("/kr/ko/resource/extra/fonts/playfairedisplay/PlayfairDisplay-Black.woff") format("woff"), url("/kr/ko/resource/extra/fonts/playfairedisplay/PlayfairDisplay-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/kr/ko/resource/font/Montserrat-Medium.eot");
+  src: url("/kr/ko/resource/font/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("/kr/ko/resource/font/Montserrat-Medium.woff") format("woff"), url("/kr/ko/resource/font/Montserrat-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/kr/ko/resource/font/Montserrat-SemiBold.eot");
+  src: url("/kr/ko/resource/font/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("/kr/ko/resource/font/Montserrat-SemiBold.woff") format("woff"), url("/kr/ko/resource/font/Montserrat-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/kr/ko/resource/font/Montserrat-Bold.eot");
+  src: url("/kr/ko/resource/font/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("/kr/ko/resource/font/Montserrat-Bold.woff") format("woff"), url("/kr/ko/resource/font/Montserrat-Bold.ttf") format("truetype"); }
+*/
+
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 900;
+  font-display: swap;
+  src: local('Pretendard Black'), url('./Pretendard-Black.subset.woff2') format('woff2'), url('./Pretendard-Black.subset.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 800;
+  font-display: swap;
+  src: local('Pretendard ExtraBold'), url('./Pretendard-ExtraBold.subset.woff2') format('woff2'), url('./Pretendard-ExtraBold.subset.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: local('Pretendard Bold'), url('./Pretendard-Bold.subset.woff2') format('woff2'), url('./Pretendard-Bold.subset.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: local('Pretendard SemiBold'), url('./Pretendard-SemiBold.subset.woff2') format('woff2'), url('./Pretendard-SemiBold.subset.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  font-display: swap;
+  src: local('Pretendard Medium'), url('./Pretendard-Medium.subset.woff2') format('woff2'), url('./Pretendard-Medium.subset.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pretendard Regular'), url('./Pretendard-Regular.subset.woff2') format('woff2'), url('./Pretendard-Regular.subset.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 300;
+  font-display: swap;
+  src: local('Pretendard Light'), url('./Pretendard-Light.subset.woff2') format('woff2'), url('./Pretendard-Light.subset.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 200;
+  font-display: swap;
+  src: local('Pretendard ExtraLight'), url('./Pretendard-ExtraLight.subset.woff2') format('woff2'), url('./Pretendard-ExtraLight.subset.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 100;
+  font-display: swap;
+  src: local('Pretendard Thin'), url('./Pretendard-Thin.subset.woff2') format('woff2'), url('./Pretendard-Thin.subset.woff') format('woff');
+}
