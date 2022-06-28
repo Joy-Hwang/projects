@@ -1,0 +1,53 @@
+@charset 'Utf-8';
+
+
+/* common */
+body, ul {
+    margin: 0; padding: 0;
+}
+
+#wrap {
+    color: #000;
+    margin: 0 auto;
+    box-sizing: border-box;
+    ul {
+    list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .layout__head {
+        .section__inner{
+            width: 100%;
+            height: 0;
+            padding-bottom: calc(802 / 1920 * 100%);
+            background-image: url(../../img/mamonde_main_layout_header_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 0;
+            .layout__header {
+                height: 68px;
+                line-height: 68px;
+                color: #fff;
+                .section__gnb {
+                    .section__logo {
+                        margin-left: 335px;
+                        width: 132px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+/* html {font-size: 0.625rem;}
+body {font-size: 1.4rem; color: #333;}
+ */

@@ -1,0 +1,46 @@
+/* common */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  color: #000;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#wrap ul {
+  list-style: none;
+}
+#wrap a {
+  text-decoration: none;
+  color: inherit;
+}
+#wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#wrap .layout__head .section__inner {
+  width: 100%;
+  height: 0;
+  padding-bottom: 41.7708333333%;
+  background-image: url(../../img/mamonde_main_layout_header_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+}
+#wrap .layout__head .section__inner .layout__header {
+  height: 68px;
+  line-height: 68px;
+  color: #fff;
+}
+#wrap .layout__head .section__inner .layout__header .section__gnb .section__logo {
+  margin-left: 335px;
+  width: 132px;
+}
+
+/* html {font-size: 0.625rem;}
+body {font-size: 1.4rem; color: #333;}
+ *//*# sourceMappingURL=style.css.map */
