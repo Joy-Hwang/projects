@@ -2,11 +2,16 @@
 
 
 /* common */
+body {
+    width: 100%;
+}
 body, ul {
     margin: 0; padding: 0;
 }
 
 #wrap {
+    max-width: 1920px;
+    overflow-y: scroll;
     color: #000;
     margin: 0 auto;
     box-sizing: border-box;
@@ -35,12 +40,33 @@ body, ul {
                 height: 68px;
                 line-height: 68px;
                 color: #fff;
-                .section__gnb {
-                    .section__logo {
-                        margin-left: 335px;
+              .section__header-menu {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .section__logo {
+                    img {
                         width: 132px;
+                        height: auto;
                     }
                 }
+                .section__gnb {
+                    display: inline-block;
+                    &--menu {
+                        display: inline-block;
+                    }
+                }
+                .section__util-wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    .section__util {
+                        display: inline-block;
+                        &--item {
+                            display: inline-block;
+                        }
+                    }    
+                }
+              }
             }
         }
     }
@@ -48,6 +74,3 @@ body, ul {
 }
 
 
-/* html {font-size: 0.625rem;}
-body {font-size: 1.4rem; color: #333;}
- */
