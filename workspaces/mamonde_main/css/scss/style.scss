@@ -2,83 +2,189 @@
 
 
 /* common */
-body {
-    width: 100%;
-}
 body, ul {
-    margin: 0; padding: 0;
+    margin: 0; padding: 0; list-style: none;
 }
-
+a {text-decoration: none;color: inherit;}
+img {width: 100%;height: 100%; object-fit: cover;}
 #wrap {
     max-width: 1920px;
     overflow-y: scroll;
     color: #000;
     margin: 0 auto;
     box-sizing: border-box;
-    ul {
-    list-style: none;
-    }
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-    img {
+    font-family: 'Arita Dotum', 'Cera Pro', sans-serif;
+}
+.section__inner {
+    position: relative;
+}
+.section__content .section__inner {
+    padding: 0 242px;
+
+}
+.section__title {
+    font-family: 'Cera Pro', sans-serif;
+    font-size: 40px;
+    color: #000;
+    font-weight: bold;
+}
+.section__highlight {
+    display: block;
+}
+.section__main-contents {
+    margin-top: 20px;
+}
+
+
+/* layout__head */
+.layout__head {
+    .section__inner{
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .layout__head {
-        .section__inner{
+        height: 0;
+        padding-bottom: calc(802 / 1920 * 100%);
+        background-image: url(../../img/mamonde_main_layout_header_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 0;
+        .layout__header {
+            height: 68px;
+            line-height: 68px;
+            color: #fff;
+            padding: 0 323px 0 335px;
+            .section__header-menu {
+            display: flex;
+            justify-content: space-between;
             width: 100%;
-            height: 0;
-            padding-bottom: calc(802 / 1920 * 100%);
-            background-image: url(../../img/mamonde_main_layout_header_bg.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 0;
-            .layout__header {
-                height: 68px;
-                line-height: 68px;
-                color: #fff;
-                padding: 0 323px 0 335px;
-              .section__header-menu {
+            font-weight: 600;
+            .section__logo {
+                img {
+                    width: 132px;
+                    height: auto;
+                }
+            }
+            .section__gnb {
+                display: inline-block;
+                &--menu {
+                    display: inline-block;
+                    &:nth-child(1) {
+                        margin-right:135px;
+                    }
+                    &:nth-child(2) {
+                        margin-right:139px;
+                    }
+                }
+                
+            }
+            .section__util-wrap {
                 display: flex;
                 justify-content: space-between;
-                width: 100%;
-                .section__logo {
+                .section__util {
+                    display: inline-block;
+                    &--item {
+                        display: inline-block;
+                        &:nth-child(1) {
+                            margin-right: 38px;
+                        }
+                        &:nth-child(2) {
+                            margin-right: 30px;
+                        }
+                    }
+                }   
+                .icon.icon__tooltip--search {
+                    width: 45px;
+                    height: 45px;
+                    margin-top: 5px;
                     img {
-                        width: 132px;
+                        width: auto;
                         height: auto;
                     }
                 }
-                .section__gnb {
-                    display: inline-block;
-                    &--menu {
-                        display: inline-block;
-                        &:nth-child(1) {
-                            margin-right:135px;
-                        }
-                        &:nth-child(2) {
-                            margin-right:139px;
-                        }
-                    }
-                    
-                }
-                .section__util-wrap {
-                    display: flex;
-                    justify-content: space-between;
-                    .section__util {
-                        display: inline-block;
-                        &--item {
-                            display: inline-block;
-                        }
-                    }    
-                }
-              }
+            }
+
             }
         }
     }
-
+    
 }
+
+/* main__banner */
+.section__main-banner{
+    .section__title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 264px;
+        margin-left: 334px;
+        left: 0;
+        color: #fff;
+        &--b-text {
+            display: block;
+            font-style: normal;
+            font-size: 45px;
+            line-height: 1.2;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        &--text {
+            display: block;
+            font-size: 24px;
+            margin-bottom: 63px;
+            font-weight: 600;
+        }
+        &--btn-more {
+            font-size: 18px;
+            border: 1px solid #fff;
+            padding: 13px 26px;
+            font-weight: 400;
+        }
+    }
+    .section__rolling-navi {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 596px;
+        margin-left: 334px;
+    }
+}
+    /* layout__banner */
+    .layout__body {
+        /* Skincare Solution */ 
+        .section__content.skincare-solution {
+            .section__inner{
+             padding-right: 0;
+                .section__tit-box {
+                    .section__highlight {
+                        width: 224px;
+                        height: 40px;
+                    }
+                }  
+            }
+        }
+        /* Mamonde Exclusive */ 
+        .section__content.mamonde-exclusive{
+            margin-top: 150px;
+            .section__inner {
+                padding-right: 0;
+                .section__tit-box {
+                    .section__highlight {
+                        width: 179px;
+                        height: 40px;
+                    }
+                }  
+             }
+        }
+        /* Brand Story */ 
+        .section__content.brand-story{
+            margin-top: 130px;
+        }
+        /* with Mamonde */ 
+        .section__content.with-mamonde{
+            margin-top: 130px;
+        }
+}
+
+
+
+
 
 

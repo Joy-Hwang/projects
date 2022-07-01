@@ -1,11 +1,20 @@
 /* common */
-body {
-  width: 100%;
-}
-
 body, ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #wrap {
@@ -14,21 +23,34 @@ body, ul {
   color: #000;
   margin: 0 auto;
   box-sizing: border-box;
+  font-family: "Arita Dotum", "Cera Pro", sans-serif;
 }
-#wrap ul {
-  list-style: none;
+
+.section__inner {
+  position: relative;
 }
-#wrap a {
-  text-decoration: none;
-  color: inherit;
+
+.section__content .section__inner {
+  padding: 0 242px;
 }
-#wrap img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+
+.section__title {
+  font-family: "Cera Pro", sans-serif;
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
 }
-#wrap .layout__head .section__inner {
+
+.section__highlight {
+  display: block;
+}
+
+.section__main-contents {
+  margin-top: 20px;
+}
+
+/* layout__head */
+.layout__head .section__inner {
   width: 100%;
   height: 0;
   padding-bottom: 41.7708333333%;
@@ -37,40 +59,125 @@ body, ul {
   background-size: cover;
   background-position: 50% 0;
 }
-#wrap .layout__head .section__inner .layout__header {
+.layout__head .section__inner .layout__header {
   height: 68px;
   line-height: 68px;
   color: #fff;
   padding: 0 323px 0 335px;
 }
-#wrap .layout__head .section__inner .layout__header .section__header-menu {
+.layout__head .section__inner .layout__header .section__header-menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  font-weight: 600;
 }
-#wrap .layout__head .section__inner .layout__header .section__header-menu .section__logo img {
+.layout__head .section__inner .layout__header .section__header-menu .section__logo img {
   width: 132px;
   height: auto;
 }
-#wrap .layout__head .section__inner .layout__header .section__header-menu .section__gnb {
+.layout__head .section__inner .layout__header .section__header-menu .section__gnb {
   display: inline-block;
 }
-#wrap .layout__head .section__inner .layout__header .section__header-menu .section__gnb--menu {
+.layout__head .section__inner .layout__header .section__header-menu .section__gnb--menu {
   display: inline-block;
 }
-#wrap .layout__head .section__inner .layout__header .section__header-menu .section__gnb--menu:nth-child(1) {
+.layout__head .section__inner .layout__header .section__header-menu .section__gnb--menu:nth-child(1) {
   margin-right: 135px;
 }
-#wrap .layout__head .section__inner .layout__header .section__header-menu .section__gnb--menu:nth-child(2) {
+.layout__head .section__inner .layout__header .section__header-menu .section__gnb--menu:nth-child(2) {
   margin-right: 139px;
 }
-#wrap .layout__head .section__inner .layout__header .section__header-menu .section__util-wrap {
+.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap {
   display: flex;
   justify-content: space-between;
 }
-#wrap .layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .section__util {
+.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .section__util {
   display: inline-block;
 }
-#wrap .layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .section__util--item {
+.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .section__util--item {
   display: inline-block;
+}
+.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .section__util--item:nth-child(1) {
+  margin-right: 38px;
+}
+.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .section__util--item:nth-child(2) {
+  margin-right: 30px;
+}
+.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .icon.icon__tooltip--search {
+  width: 45px;
+  height: 45px;
+  margin-top: 5px;
+}
+.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .icon.icon__tooltip--search img {
+  width: auto;
+  height: auto;
+}
+
+/* main__banner */
+.section__main-banner .section__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 264px;
+  margin-left: 334px;
+  left: 0;
+  color: #fff;
+}
+.section__main-banner .section__title--b-text {
+  display: block;
+  font-style: normal;
+  font-size: 45px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.section__main-banner .section__title--text {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 63px;
+  font-weight: 600;
+}
+.section__main-banner .section__title--btn-more {
+  font-size: 18px;
+  border: 1px solid #fff;
+  padding: 13px 26px;
+  font-weight: 400;
+}
+.section__main-banner .section__rolling-navi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 596px;
+  margin-left: 334px;
+}
+
+/* layout__banner */
+.layout__body {
+  /* Skincare Solution */
+  /* Mamonde Exclusive */
+  /* Brand Story */
+  /* with Mamonde */
+}
+.layout__body .section__content.skincare-solution .section__inner {
+  padding-right: 0;
+}
+.layout__body .section__content.skincare-solution .section__inner .section__tit-box .section__highlight {
+  width: 224px;
+  height: 40px;
+}
+.layout__body .section__content.mamonde-exclusive {
+  margin-top: 150px;
+}
+.layout__body .section__content.mamonde-exclusive .section__inner {
+  padding-right: 0;
+}
+.layout__body .section__content.mamonde-exclusive .section__inner .section__tit-box .section__highlight {
+  width: 179px;
+  height: 40px;
+}
+.layout__body .section__content.brand-story {
+  margin-top: 130px;
+}
+.layout__body .section__content.with-mamonde {
+  margin-top: 130px;
 }/*# sourceMappingURL=style.css.map */
