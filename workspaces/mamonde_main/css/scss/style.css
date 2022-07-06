@@ -1,5 +1,5 @@
 /* common */
-body, ul {
+body, ul, h2 {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -19,7 +19,7 @@ img {
 
 #wrap {
   max-width: 1920px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   color: #000;
   margin: 0 auto;
   box-sizing: border-box;
@@ -49,8 +49,8 @@ img {
   margin-top: 20px;
 }
 
-/* layout__head */
-.layout__head .section__inner {
+/* layout__top */
+.layout__top .section__inner {
   width: 100%;
   height: 0;
   padding-bottom: 41.7708333333%;
@@ -59,56 +59,68 @@ img {
   background-size: cover;
   background-position: 50% 0;
 }
-.layout__head .section__inner .layout__header {
+.layout__top .section__inner .icon__arrow--left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.layout__top .section__inner .icon__arrow--right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.layout__top .section__inner .section__header {
   height: 68px;
   line-height: 68px;
   color: #fff;
   padding: 0 323px 0 335px;
 }
-.layout__head .section__inner .layout__header .section__header-menu {
+.layout__top .section__inner .section__header .section__header-menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-weight: 600;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__logo img {
+.layout__top .section__inner .section__header .section__header-menu .section__logo img {
   width: 132px;
   height: auto;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__gnb {
+.layout__top .section__inner .section__header .section__header-menu .section__gnb {
   display: inline-block;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__gnb--menu {
+.layout__top .section__inner .section__header .section__header-menu .section__gnb--menu {
   display: inline-block;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__gnb--menu:nth-child(1) {
+.layout__top .section__inner .section__header .section__header-menu .section__gnb--menu:nth-child(1) {
   margin-right: 135px;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__gnb--menu:nth-child(2) {
+.layout__top .section__inner .section__header .section__header-menu .section__gnb--menu:nth-child(2) {
   margin-right: 139px;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap {
+.layout__top .section__inner .section__header .section__header-menu .section__util-wrap {
   display: flex;
   justify-content: space-between;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .section__util {
+.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .section__util {
   display: inline-block;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .section__util--item {
+.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .section__util--item {
   display: inline-block;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .section__util--item:nth-child(1) {
+.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .section__util--item:nth-child(1) {
   margin-right: 38px;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .section__util--item:nth-child(2) {
+.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .section__util--item:nth-child(2) {
   margin-right: 30px;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .icon.icon__tooltip--search {
+.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .icon.icon__tooltip--search {
   width: 45px;
   height: 45px;
   margin-top: 5px;
 }
-.layout__head .section__inner .layout__header .section__header-menu .section__util-wrap .icon.icon__tooltip--search img {
+.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .icon.icon__tooltip--search img {
   width: auto;
   height: auto;
 }
@@ -151,7 +163,7 @@ img {
   margin-left: 334px;
 }
 
-/* layout__banner */
+/* layout__body */
 .layout__body {
   /* Skincare Solution */
   /* Mamonde Exclusive */
@@ -180,4 +192,9 @@ img {
 }
 .layout__body .section__content.with-mamonde {
   margin-top: 130px;
+}
+
+/* layout__footer */
+.layout__footer {
+  margin-top: 70px;
 }/*# sourceMappingURL=style.css.map */

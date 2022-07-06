@@ -2,14 +2,14 @@
 
 
 /* common */
-body, ul {
+body, ul, h2 {
     margin: 0; padding: 0; list-style: none;
 }
 a {text-decoration: none;color: inherit;}
 img {width: 100%;height: 100%; object-fit: cover;}
 #wrap {
     max-width: 1920px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     color: #000;
     margin: 0 auto;
     box-sizing: border-box;
@@ -36,8 +36,8 @@ img {width: 100%;height: 100%; object-fit: cover;}
 }
 
 
-/* layout__head */
-.layout__head {
+/* layout__top */
+.layout__top {
     .section__inner{
         width: 100%;
         height: 0;
@@ -46,7 +46,21 @@ img {width: 100%;height: 100%; object-fit: cover;}
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 0;
-        .layout__header {
+        .icon__arrow {
+            &--left {
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+            }
+            &--right {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+            }
+        }
+        .section__header {
             height: 68px;
             line-height: 68px;
             color: #fff;
@@ -146,7 +160,7 @@ img {width: 100%;height: 100%; object-fit: cover;}
         margin-left: 334px;
     }
 }
-    /* layout__banner */
+    /* layout__body */
     .layout__body {
         /* Skincare Solution */ 
         .section__content.skincare-solution {
@@ -183,7 +197,10 @@ img {width: 100%;height: 100%; object-fit: cover;}
         }
 }
 
-
+/* layout__footer */
+.layout__footer{
+    margin-top: 70px;
+}
 
 
 
