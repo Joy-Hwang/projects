@@ -9,7 +9,6 @@ a {text-decoration: none;color: inherit;}
 img {width: 100%;height: 100%; object-fit: cover;}
 #wrap {
     max-width: 1920px;
-    /* overflow-y: scroll; */
     color: #000;
     margin: 0 auto;
     box-sizing: border-box;
@@ -27,6 +26,7 @@ img {width: 100%;height: 100%; object-fit: cover;}
     font-size: 40px;
     color: #000;
     font-weight: bold;
+    margin-bottom: 25px;
 }
 .section__highlight {
     display: block;
@@ -162,8 +162,10 @@ img {width: 100%;height: 100%; object-fit: cover;}
 }
     /* layout__body */
     .layout__body {
+        margin-top: 95px;
         /* Skincare Solution */ 
         .section__content.skincare-solution {
+
             .section__inner{
              padding-right: 0;
                 .section__tit-box {
