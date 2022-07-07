@@ -2,6 +2,12 @@
 
 
 /* common */
+html {
+    font-size: 62.5%;
+  }
+body {
+    font-size: 1em;
+}
 body, ul, h2 {
     margin: 0; padding: 0; list-style: none;
 }
@@ -18,21 +24,21 @@ img {width: 100%;height: 100%; object-fit: cover;}
     position: relative;
 }
 .section__content .section__inner {
-    padding: 0 242px;
+    padding: 0 12.6vw;
 
 }
 .section__title {
     font-family: 'Cera Pro', sans-serif;
-    font-size: 40px;
+    font-size: 2.08vw;
     color: #000;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 1.3vw;
 }
 .section__highlight {
     display: block;
 }
 .section__main-contents {
-    margin-top: 20px;
+    margin-top: 1.04vw;
 }
 
 
@@ -52,19 +58,25 @@ img {width: 100%;height: 100%; object-fit: cover;}
                 top: 50%;
                 left: 20px;
                 transform: translateY(-50%);
+                img {
+                    width: 1.3vw;
+                }
             }
             &--right {
                 position: absolute;
                 top: 50%;
                 right: 20px;
                 transform: translateY(-50%);
+                img {
+                    width: 1.3vw;
+                }
             }
         }
         .section__header {
-            height: 68px;
-            line-height: 68px;
+            height: 3.54vw;
+            line-height: 3.54vw;
             color: #fff;
-            padding: 0 323px 0 335px;
+            padding: 0 16.82vw 0 17.45vw;
             .section__header-menu {
             display: flex;
             justify-content: space-between;
@@ -72,19 +84,21 @@ img {width: 100%;height: 100%; object-fit: cover;}
             font-weight: 600;
             .section__logo {
                 img {
-                    width: 132px;
+                    width: 6.88vw;
                     height: auto;
                 }
             }
             .section__gnb {
                 display: inline-block;
+
                 &--menu {
+                    font-size: 0.94vw;
                     display: inline-block;
                     &:nth-child(1) {
-                        margin-right:135px;
+                        margin-right:7.03vw;
                     }
                     &:nth-child(2) {
-                        margin-right:139px;
+                        margin-right:7.24vw;
                     }
                 }
                 
@@ -95,22 +109,21 @@ img {width: 100%;height: 100%; object-fit: cover;}
                 .section__util {
                     display: inline-block;
                     &--item {
+                        font-size: 0.94vw;
                         display: inline-block;
                         &:nth-child(1) {
-                            margin-right: 38px;
+                            margin-right: 1.98vw;
                         }
                         &:nth-child(2) {
-                            margin-right: 30px;
+                            margin-right: 1.56vw;
                         }
                     }
                 }   
                 .icon.icon__tooltip--search {
-                    width: 45px;
-                    height: 45px;
-                    margin-top: 5px;
+                    margin-top: 0.26vw;
                     img {
-                        width: auto;
-                        height: auto;
+                        width: 1.09vw;
+                        height: 1.09vw;
                     }
                 }
             }
@@ -123,32 +136,32 @@ img {width: 100%;height: 100%; object-fit: cover;}
 
 /* main__banner */
 .section__main-banner{
-    .section__title {
+    .main__title {
         position: absolute;
         top: 0;
         left: 0;
-        margin-top: 264px;
-        margin-left: 334px;
+        margin-top: 13.75vw;
+        margin-left: 17.40vw;
         left: 0;
         color: #fff;
         &--b-text {
             display: block;
             font-style: normal;
-            font-size: 45px;
+            font-size: 2.34vw;
             line-height: 1.2;
             font-weight: bold;
-            margin-bottom: 25px;
+            margin-bottom: 1.3vw;
         }
         &--text {
             display: block;
-            font-size: 24px;
-            margin-bottom: 63px;
+            font-size: 1.25vw;
+            margin-bottom: 3.28vw;
             font-weight: 600;
         }
         &--btn-more {
-            font-size: 18px;
+            font-size: 0.94vw;
             border: 1px solid #fff;
-            padding: 13px 26px;
+            padding: 0.68vw 1.35vw;
             font-weight: 400;
         }
     }
@@ -156,13 +169,16 @@ img {width: 100%;height: 100%; object-fit: cover;}
         position: absolute;
         top: 0;
         left: 0;
-        margin-top: 596px;
-        margin-left: 334px;
+        margin-top: 31.04vw;
+        margin-left: 17.4vw;
+        img {
+            width: 24.48vw;
+        }
     }
 }
     /* layout__body */
     .layout__body {
-        margin-top: 95px;
+        margin-top:4.95vw;
         /* Skincare Solution */ 
         .section__content.skincare-solution {
 
@@ -170,38 +186,38 @@ img {width: 100%;height: 100%; object-fit: cover;}
              padding-right: 0;
                 .section__tit-box {
                     .section__highlight {
-                        width: 224px;
-                        height: 40px;
+                        width: 11.67vw;
+                        height: auto;
                     }
                 }  
             }
         }
         /* Mamonde Exclusive */ 
         .section__content.mamonde-exclusive{
-            margin-top: 150px;
+            margin-top: 7.81vw;
             .section__inner {
                 padding-right: 0;
                 .section__tit-box {
                     .section__highlight {
-                        width: 179px;
-                        height: 40px;
+                        width: 9.32vw;
+                        height: auto;
                     }
                 }  
              }
         }
         /* Brand Story */ 
         .section__content.brand-story{
-            margin-top: 130px;
+            margin-top: 6.77vw;
         }
         /* with Mamonde */ 
         .section__content.with-mamonde{
-            margin-top: 130px;
+            margin-top: 6.77vw;
         }
 }
 
 /* layout__footer */
 .layout__footer{
-    margin-top: 70px;
+    margin-top: 3.65vw;
 }
 
 
