@@ -2,12 +2,6 @@
 
 
 /* common */
-html {
-    font-size: 62.5%;
-  }
-body {
-    font-size: 1em;
-}
 body, ul, h2 {
     margin: 0; padding: 0; list-style: none;
 }
@@ -20,31 +14,31 @@ img {width: 100%;height: 100%; object-fit: cover;}
     box-sizing: border-box;
     font-family: 'Arita Dotum', 'Cera Pro', sans-serif;
 }
-.section__inner {
+.section-inner {
     position: relative;
 }
-.section__content .section__inner {
+.section-content .section-inner {
     padding: 0 12.6vw;
 
 }
-.section__title {
+.section-title {
     font-family: 'Cera Pro', sans-serif;
     font-size: 2.08vw;
     color: #000;
     font-weight: bold;
     margin-bottom: 1.48978898629%;
 }
-.section__highlight {
+.section-highlight {
     display: block;
 }
-.section__main-contents {
+.section-main-contents {
     margin-top: 1.04vw;
 }
 
 
-/* layout__top */
-.layout__top {
-    .section__inner{
+/* layout-top */
+.layout-top {
+    .section-inner{
         width: 100%;
         height: 0;
         padding-bottom: calc(802 / 1920 * 100%);
@@ -52,8 +46,8 @@ img {width: 100%;height: 100%; object-fit: cover;}
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 0;
-        .icon__arrow {
-            &--left {
+        .icon-arrow {
+            &__left {
                 position: absolute;
                 top: 50%;
                 left: 1.04166666667%;
@@ -62,7 +56,7 @@ img {width: 100%;height: 100%; object-fit: cover;}
                     width: 1.3vw;
                 }
             }
-            &--right {
+            &__right {
                 position: absolute;
                 top: 50%;
                 right: 1.04166666667%;
@@ -72,17 +66,17 @@ img {width: 100%;height: 100%; object-fit: cover;}
                 }
             }
         }
-        .section__header {
+        .section-header {
             height: 8.47880299252%;
             line-height: 3.54vw;
             color: #fff;
             padding: 0 16.82vw 0 17.45vw;
-            .section__header-menu {
+            .section-header__menu {
             display: flex;
             justify-content: space-between;
             width: 100%;
             font-weight: 600;
-            .section__logo {
+            .section-logo {
                 a {
                     vertical-align: sub;
                     img {
@@ -91,10 +85,10 @@ img {width: 100%;height: 100%; object-fit: cover;}
                     }
                 } 
             }
-            .section__gnb {
+            .section-gnb {
                 display: inline-block;
 
-                &--menu {
+                &__menu {
                     font-size: 0.94vw;
                     display: inline-block;
                     &:nth-child(1) {
@@ -106,12 +100,12 @@ img {width: 100%;height: 100%; object-fit: cover;}
                 }
                 
             }
-            .section__util-wrap {
+            .section-util-wrap {
                 display: flex;
                 justify-content: space-between;
-                .section__util {
+                .section-util {
                     display: inline-block;
-                    &--item {
+                    &__item {
                         font-size: 0.94vw;
                         display: inline-block;
                         &:nth-child(1) {
@@ -122,7 +116,7 @@ img {width: 100%;height: 100%; object-fit: cover;}
                         }
                     }
                 }   
-                .icon.icon__tooltip--search {
+                .icon-tooltip__search {
                     margin-top: 0.26vw;
                     img {
                         width: 1.09vw;
@@ -133,8 +127,8 @@ img {width: 100%;height: 100%; object-fit: cover;}
 
             }
         }
-        .section__main-visual{
-            .main__title {
+        .section-main-visual{
+            .main-title {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -142,7 +136,7 @@ img {width: 100%;height: 100%; object-fit: cover;}
                 margin-left: 17.39583333333%;
                 left: 0;
                 color: #fff;
-                &--b-text {
+                &__b-text {
                     display: block;
                     font-style: normal;
                     font-size: 2.34vw;
@@ -150,7 +144,7 @@ img {width: 100%;height: 100%; object-fit: cover;}
                     font-weight: bold;
                     margin-bottom: 6.69236534961%;
                 }
-                &--text {
+                &__text {
                     display: block;
                     font-size: 1.25vw;
                     margin-bottom: 16.86476068102%;
@@ -158,7 +152,7 @@ img {width: 100%;height: 100%; object-fit: cover;}
                 }
         
             }
-            .btn__more {
+            .btn-more {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -166,13 +160,13 @@ img {width: 100%;height: 100%; object-fit: cover;}
                 margin-left: 17.44791666667%;
                 border: 1px solid #fff;
                 padding: 0.52083333333% 1.35416666667%;
-                &--txt {
+                &__txt {
                 font-size: 0.94vw;
                 font-weight: 400;
                 color: #fff;
                 }
             }
-            .section__rolling-navi {
+            .section-rolling-navi {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -189,15 +183,15 @@ img {width: 100%;height: 100%; object-fit: cover;}
 
 
     /* layout__body */
-    .layout__body {
+    .layout-body {
         margin-top:4.95vw;
         /* Skincare Solution */ 
-        .section__content.skincare-solution {
+        .section-content.skincare-solution {
 
-            .section__inner{
+            .section-inner{
              padding-right: 0;
-                .section__tit-box {
-                    .section__highlight {
+                .section-tit-box {
+                    .section-highlight {
                         width: 11.67vw;
                         height: auto;
                     }
@@ -205,12 +199,12 @@ img {width: 100%;height: 100%; object-fit: cover;}
             }
         }
         /* Mamonde Exclusive */ 
-        .section__content.mamonde-exclusive{
+        .section-content.mamonde-exclusive{
             margin-top: 7.81vw;
-            .section__inner {
+            .section-inner {
                 padding-right: 0;
-                .section__tit-box {
-                    .section__highlight {
+                .section-tit-box {
+                    .section-highlight {
                         width: 9.32vw;
                         height: auto;
                     }
@@ -218,17 +212,17 @@ img {width: 100%;height: 100%; object-fit: cover;}
              }
         }
         /* Brand Story */ 
-        .section__content.brand-story{
+        .section-content.brand-story{
             margin-top: 6.77vw;
         }
         /* with Mamonde */ 
-        .section__content.with-mamonde{
+        .section-content.with-mamonde{
             margin-top: 6.77vw;
         }
 }
 
 /* layout__footer */
-.layout__footer{
+.layout-footer{
     margin-top: 3.65vw;
 }
 

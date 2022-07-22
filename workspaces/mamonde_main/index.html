@@ -11,57 +11,57 @@
   <body>
     <div id="wrap">
       <!-- layout__top -->
-        <div class="layout__top">
-          <div class="section__main-banner">
-            <div class="section__inner">
-              <div class="icon icon__arrow">
-                <div class="icon icon__arrow--left">
+        <div class="layout-top">
+          <div class="section-main-banner">
+            <div class="section-inner">
+              <div class="icon-arrow">
+                <div class="icon-arrow__left">
                   <img src="./img/mamonde_main_arrow_left.png" alt="">
                 </div>
-                <div class="icon icon__arrow--right">
+                <div class="icon-arrow__right">
                   <img src="./img/mamonde_main_arrow_right.png" alt="">
                 </div>
               </div>
-              <header class="section__header">
-                <div class="section__header-menu">
-                  <div class="section__logo">
+              <header class="section-header">
+                <div class="section-header__menu">
+                  <div class="section-logo">
                       <a href="#"><img src="./img/mamonde_main_logo.png" alt="마몽드 로고" /></a>
                   </div>
-                  <ul class="section__gnb">
-                    <li class="section__gnb--menu">
+                  <ul class="section-gnb">
+                    <li class="section-gnb__menu">
                       <a href="#">베스트&신제품</a>
                     </li>
-                    <li class="section__gnb--menu">
+                    <li class="section-gnb__menu">
                       <a href="#">제품</a>
                     </li>
-                    <li class="section__gnb--menu">
+                    <li class="section-gnb__menu">
                       <a href="#">브랜드</a>
                     </li>
                   </ul>
-                  <div class="section__util-wrap">
-                    <ul class="section__util">
-                      <li class="section__util--item">
+                  <div class="section-util-wrap">
+                    <ul class="section-util">
+                      <li class="section-util__item">
                         <a href="#">로그인</a>
                       </li>
-                      <li class="section__util--item">
+                      <li class="section-util__item">
                         <a href="#">매장찾기</a>
                       </li>
                     </ul>
-                    <div class="icon icon__tooltip--search">
+                    <div class="icon-tooltip__search">
                       <img src="./img/mamonde_main_search.png" alt="검색">
                     </div>
                   </div>
                 </div>
               </header>
-              <section class="section__main-visual">
-                <div class="main__title">
-                  <em class="main__title--b-text"> NEW 로즈 하이드라 <br> 글로리 앰플</em>
-                  <span class="main__title--text">한 겹으로 한 결 다른 고밀도 수분광</span>
+              <section class="section-main-visual">
+                <div class="main-title">
+                  <em class="main-title__b-text"> NEW 로즈 하이드라 <br> 글로리 앰플</em>
+                  <span class="main-title__text">한 겹으로 한 결 다른 고밀도 수분광</span>
                 </div>
-                <a class="btn btn__more" href="#">
-                  <span class="btn__more--txt"> 자세히 보기 </span>
+                <a class="btn-more" href="#">
+                  <span class="btn-more__txt"> 자세히 보기 </span>
                 </a>
-                <div class="section__rolling-navi">
+                <div class="section-rolling-navi">
                   <img src="./img/mamonde_main_rolling.png" alt="롤링 바" />
                 </div>
               </section>
@@ -72,28 +72,46 @@
 
      
         <!-- layout__body -->
-        <main class="layout__body">
+        <main class="layout-body">
           <!-- Skincare Solution -->
-          <section class="section__content skincare-solution">
-            <div class="section__inner">
-              <div class="section__tit-box">
-                <h2 class="section__title">Skincare Solution</h2>
-                <span class="section__highlight">
+          <section class="section-content skincare-solution">
+            <div class="section-inner">
+              <div class="section-tit-box">
+                <h2 class="section-title">Skincare Solution</h2>
+                <span class="section-highlight">
                   <img src="./img/mamonde_main_icon_recommend_01.png" alt="Recommended"/>
                 </span>
               </div>
               <div class="section__main-contents">
-                <img src="./img/mamonde_main_layout_body_img_01.jpg" alt="" />
+                <div class="text-wrap">
+                  <span class="text-wrap__tag--bg-yellow">#저자극탄력</span>
+                  <span class="text-wrap__tag">#장벽 강화</span>
+                  <span class="text-wrap__tag">#자극 진정</span>
+                  <span class="text-wrap__tag">#100시간 보습력</span>
+                </div>
+                <img src="./img/mamonde_main_layout_body_rolling_img.jpg" alt="" class="navi-bar">
+                <div class="prd-list-box">
+                  <ul class="prd-list-wrap">
+                    <li class="list">
+                      <a href="#">
+                        <img src="./img/mamonde_main_layout_body_detail_img_01.jpg" alt="제품명">
+                      </a>
+                      <div class="list-text">
+                        <p>바쿠치올레티놀크림~~~~</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </section>
           <!--// Skincare Solution -->
           <!-- Mamonde Exclusive -->
-          <section class="section__content mamonde-exclusive">
-            <div class="section__inner">
-              <div class="section__tit-box">
-                <h2 class="section__title">Mamonde Exclusive</h2>
-                <span class="section__highlight">
+          <section class="section-content mamonde-exclusive">
+            <div class="section-inner">
+              <div class="section-tit-box">
+                <h2 class="section-title">Mamonde Exclusive</h2>
+                <span class="section-highlight">
                   <img src="./img/mamonde_main_icon_recommend_02.png" alt="Recommended"/>
                 </span>
               </div>
@@ -104,24 +122,24 @@
           </section>
           <!--// Mamonde Exclusive -->
           <!-- Brand Story -->
-          <section class="section__content brand-story">
-            <div class="section__inner">
-              <div class="section__tit-box">
-                <h2 class="section__title">Brand Story</h2>
+          <section class="section-content brand-story">
+            <div class="section-inner">
+              <div class="section-tit-box">
+                <h2 class="section-title">Brand Story</h2>
               </div>
-              <div class="section__brand-story-contents">
+              <div class="section-brand-story-contents">
                 <img src="./img/mamonde_main_layout_body_img_03.jpg" alt="" />
               </div>
             </div>
           </section>
           <!--// Brand Story -->
           <!-- With #Mamonde -->
-          <section class="section__content with-mamonde">
-            <div class="section__inner">
-              <div class="section__tit-box">
-                <h2 class="section__title">With #Mamonde</h2>
+          <section class="section-content with-mamonde">
+            <div class="section-inner">
+              <div class="section-tit-box">
+                <h2 class="section-title">With #Mamonde</h2>
               </div>
-              <div class="section__with-contents">
+              <div class="section-with-contents">
                 <img src="./img/mamonde_main_layout_body_img_04.jpg" alt="" />
               </div>
             </div>
@@ -130,7 +148,7 @@
         </main>
         <!--// layout__body -->
         <!-- layout__footer -->
-        <footer class="layout__footer">
+        <footer class="layout-footer">
           <img src="./img/mamonde_main_layout_footer_img_01.jpg" alt="" />
         </footer>
         <!--// layout__footer -->

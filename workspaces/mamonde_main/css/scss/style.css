@@ -1,12 +1,4 @@
 /* common */
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1em;
-}
-
 body, ul, h2 {
   margin: 0;
   padding: 0;
@@ -33,15 +25,15 @@ img {
   font-family: "Arita Dotum", "Cera Pro", sans-serif;
 }
 
-.section__inner {
+.section-inner {
   position: relative;
 }
 
-.section__content .section__inner {
+.section-content .section-inner {
   padding: 0 12.6vw;
 }
 
-.section__title {
+.section-title {
   font-family: "Cera Pro", sans-serif;
   font-size: 2.08vw;
   color: #000;
@@ -49,16 +41,16 @@ img {
   margin-bottom: 1.4897889863%;
 }
 
-.section__highlight {
+.section-highlight {
   display: block;
 }
 
-.section__main-contents {
+.section-main-contents {
   margin-top: 1.04vw;
 }
 
-/* layout__top */
-.layout__top .section__inner {
+/* layout-top */
+.layout-top .section-inner {
   width: 100%;
   height: 0;
   padding-bottom: 41.7708333333%;
@@ -67,81 +59,81 @@ img {
   background-size: cover;
   background-position: 50% 0;
 }
-.layout__top .section__inner .icon__arrow--left {
+.layout-top .section-inner .icon-arrow__left {
   position: absolute;
   top: 50%;
   left: 1.0416666667%;
   transform: translateY(-50%);
 }
-.layout__top .section__inner .icon__arrow--left img {
+.layout-top .section-inner .icon-arrow__left img {
   width: 1.3vw;
 }
-.layout__top .section__inner .icon__arrow--right {
+.layout-top .section-inner .icon-arrow__right {
   position: absolute;
   top: 50%;
   right: 1.0416666667%;
   transform: translateY(-50%);
 }
-.layout__top .section__inner .icon__arrow--right img {
+.layout-top .section-inner .icon-arrow__right img {
   width: 1.3vw;
 }
-.layout__top .section__inner .section__header {
+.layout-top .section-inner .section-header {
   height: 8.4788029925%;
   line-height: 3.54vw;
   color: #fff;
   padding: 0 16.82vw 0 17.45vw;
 }
-.layout__top .section__inner .section__header .section__header-menu {
+.layout-top .section-inner .section-header .section-header__menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-weight: 600;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__logo a {
+.layout-top .section-inner .section-header .section-header__menu .section-logo a {
   vertical-align: sub;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__logo a img {
+.layout-top .section-inner .section-header .section-header__menu .section-logo a img {
   width: 6.88vw;
   height: auto;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__gnb {
+.layout-top .section-inner .section-header .section-header__menu .section-gnb {
   display: inline-block;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__gnb--menu {
+.layout-top .section-inner .section-header .section-header__menu .section-gnb__menu {
   font-size: 0.94vw;
   display: inline-block;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__gnb--menu:nth-child(1) {
+.layout-top .section-inner .section-header .section-header__menu .section-gnb__menu:nth-child(1) {
   margin-right: 7.03vw;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__gnb--menu:nth-child(2) {
+.layout-top .section-inner .section-header .section-header__menu .section-gnb__menu:nth-child(2) {
   margin-right: 7.24vw;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__util-wrap {
+.layout-top .section-inner .section-header .section-header__menu .section-util-wrap {
   display: flex;
   justify-content: space-between;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .section__util {
+.layout-top .section-inner .section-header .section-header__menu .section-util-wrap .section-util {
   display: inline-block;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .section__util--item {
+.layout-top .section-inner .section-header .section-header__menu .section-util-wrap .section-util__item {
   font-size: 0.94vw;
   display: inline-block;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .section__util--item:nth-child(1) {
+.layout-top .section-inner .section-header .section-header__menu .section-util-wrap .section-util__item:nth-child(1) {
   margin-right: 1.98vw;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .section__util--item:nth-child(2) {
+.layout-top .section-inner .section-header .section-header__menu .section-util-wrap .section-util__item:nth-child(2) {
   margin-right: 1.56vw;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .icon.icon__tooltip--search {
+.layout-top .section-inner .section-header .section-header__menu .section-util-wrap .icon-tooltip__search {
   margin-top: 0.26vw;
 }
-.layout__top .section__inner .section__header .section__header-menu .section__util-wrap .icon.icon__tooltip--search img {
+.layout-top .section-inner .section-header .section-header__menu .section-util-wrap .icon-tooltip__search img {
   width: 1.09vw;
   height: 1.09vw;
 }
-.layout__top .section__inner .section__main-visual .main__title {
+.layout-top .section-inner .section-main-visual .main-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -150,7 +142,7 @@ img {
   left: 0;
   color: #fff;
 }
-.layout__top .section__inner .section__main-visual .main__title--b-text {
+.layout-top .section-inner .section-main-visual .main-title__b-text {
   display: block;
   font-style: normal;
   font-size: 2.34vw;
@@ -158,13 +150,13 @@ img {
   font-weight: bold;
   margin-bottom: 6.6923653496%;
 }
-.layout__top .section__inner .section__main-visual .main__title--text {
+.layout-top .section-inner .section-main-visual .main-title__text {
   display: block;
   font-size: 1.25vw;
   margin-bottom: 16.864760681%;
   font-weight: 600;
 }
-.layout__top .section__inner .section__main-visual .btn__more {
+.layout-top .section-inner .section-main-visual .btn-more {
   position: absolute;
   top: 0;
   left: 0;
@@ -173,55 +165,55 @@ img {
   border: 1px solid #fff;
   padding: 0.5208333333% 1.3541666667%;
 }
-.layout__top .section__inner .section__main-visual .btn__more--txt {
+.layout-top .section-inner .section-main-visual .btn-more__txt {
   font-size: 0.94vw;
   font-weight: 400;
   color: #fff;
 }
-.layout__top .section__inner .section__main-visual .section__rolling-navi {
+.layout-top .section-inner .section-main-visual .section-rolling-navi {
   position: absolute;
   top: 0;
   left: 0;
   margin-top: 31.0416666667%;
   margin-left: 17.3958333333%;
 }
-.layout__top .section__inner .section__main-visual .section__rolling-navi img {
+.layout-top .section-inner .section-main-visual .section-rolling-navi img {
   width: 24.48vw;
 }
 
 /* layout__body */
-.layout__body {
+.layout-body {
   margin-top: 4.95vw;
   /* Skincare Solution */
   /* Mamonde Exclusive */
   /* Brand Story */
   /* with Mamonde */
 }
-.layout__body .section__content.skincare-solution .section__inner {
+.layout-body .section-content.skincare-solution .section-inner {
   padding-right: 0;
 }
-.layout__body .section__content.skincare-solution .section__inner .section__tit-box .section__highlight {
+.layout-body .section-content.skincare-solution .section-inner .section-tit-box .section-highlight {
   width: 11.67vw;
   height: auto;
 }
-.layout__body .section__content.mamonde-exclusive {
+.layout-body .section-content.mamonde-exclusive {
   margin-top: 7.81vw;
 }
-.layout__body .section__content.mamonde-exclusive .section__inner {
+.layout-body .section-content.mamonde-exclusive .section-inner {
   padding-right: 0;
 }
-.layout__body .section__content.mamonde-exclusive .section__inner .section__tit-box .section__highlight {
+.layout-body .section-content.mamonde-exclusive .section-inner .section-tit-box .section-highlight {
   width: 9.32vw;
   height: auto;
 }
-.layout__body .section__content.brand-story {
+.layout-body .section-content.brand-story {
   margin-top: 6.77vw;
 }
-.layout__body .section__content.with-mamonde {
+.layout-body .section-content.with-mamonde {
   margin-top: 6.77vw;
 }
 
 /* layout__footer */
-.layout__footer {
+.layout-footer {
   margin-top: 3.65vw;
 }/*# sourceMappingURL=style.css.map */
