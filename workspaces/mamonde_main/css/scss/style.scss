@@ -196,6 +196,50 @@ img {width: 100%;height: 100%; object-fit: cover;}
                         height: auto;
                     }
                 }  
+                .section-main-contents{
+                    .tag-wrap {
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        margin-top:13.69791666667%;
+                        margin-left: 14.73958333333%;
+                        &__tag {
+                            font-size: 1.033vw;
+                            color: #bcbcbc;
+                            margin-bottom: 29.66101694915%;
+                            &--bg-yellow {
+                                font-size: 1.446vw; 
+                                font-weight: 600;
+                                color: #000;
+                                background-color: #f7ff6e;
+                                padding: 0.42vw 0.31vw 0.37vw;
+                            }
+                        }
+                    }
+                    .navi-bar {
+                        width: 4.95vw;
+                        height: auto;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        margin-top: 36.45833333333%;
+                        margin-left: 14.53125%;
+
+                    }
+                    .prd-list-box {
+                        margin-left: 16.40625%;
+                        .prd-list-wrap {
+                            display: flex;
+                            .list {
+                                width: 17.14vw;
+                                height: 24.27vw;
+                                margin-right: 1.48619957537%;
+                            }
+                        }
+                    }
+                }
             }
         }
         /* Mamonde Exclusive */ 

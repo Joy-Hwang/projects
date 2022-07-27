@@ -196,6 +196,47 @@ img {
   width: 11.67vw;
   height: auto;
 }
+.layout-body .section-content.skincare-solution .section-inner .section-main-contents .tag-wrap {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13.6979166667%;
+  margin-left: 14.7395833333%;
+}
+.layout-body .section-content.skincare-solution .section-inner .section-main-contents .tag-wrap__tag {
+  font-size: 1.033vw;
+  color: #bcbcbc;
+  margin-bottom: 29.6610169492%;
+}
+.layout-body .section-content.skincare-solution .section-inner .section-main-contents .tag-wrap__tag--bg-yellow {
+  font-size: 1.446vw;
+  font-weight: 600;
+  color: #000;
+  background-color: #f7ff6e;
+  padding: 0.42vw 0.31vw 0.37vw;
+}
+.layout-body .section-content.skincare-solution .section-inner .section-main-contents .navi-bar {
+  width: 4.95vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 36.4583333333%;
+  margin-left: 14.53125%;
+}
+.layout-body .section-content.skincare-solution .section-inner .section-main-contents .prd-list-box {
+  margin-left: 16.40625%;
+}
+.layout-body .section-content.skincare-solution .section-inner .section-main-contents .prd-list-box .prd-list-wrap {
+  display: flex;
+}
+.layout-body .section-content.skincare-solution .section-inner .section-main-contents .prd-list-box .prd-list-wrap .list {
+  width: 17.14vw;
+  height: 24.27vw;
+  margin-right: 1.4861995754%;
+}
 .layout-body .section-content.mamonde-exclusive {
   margin-top: 7.81vw;
 }
