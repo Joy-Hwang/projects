@@ -2,7 +2,7 @@
 
 
 /* common */
-body, ul, h2 {
+body, ul, h2, p {
     margin: 0; padding: 0; list-style: none;
 }
 a {text-decoration: none;color: inherit;}
@@ -236,7 +236,22 @@ img {width: 100%;height: 100%; object-fit: cover;}
                                 width: 17.14vw;
                                 height: 24.27vw;
                                 margin-right: 1.48619957537%;
+                                .list-text{
+                                    &__title {
+                                        display: inline-block;
+                                       font-size: 1.136vw;
+                                    }
+                                }
+                                &:nth-child(1) {
+                                    .list-text{
+                                        &__title {
+                                           background-color: #fcffb2;
+                                           padding: 0 0.31vw;
+                                        }
+                                    }
+                                }
                             }
+                            
                         }
                     }
                 }

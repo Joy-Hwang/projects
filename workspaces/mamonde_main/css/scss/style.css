@@ -1,5 +1,5 @@
 /* common */
-body, ul, h2 {
+body, ul, h2, p {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -236,6 +236,14 @@ img {
   width: 17.14vw;
   height: 24.27vw;
   margin-right: 1.4861995754%;
+}
+.layout-body .section-content.skincare-solution .section-inner .section-main-contents .prd-list-box .prd-list-wrap .list .list-text__title {
+  display: inline-block;
+  font-size: 1.136vw;
+}
+.layout-body .section-content.skincare-solution .section-inner .section-main-contents .prd-list-box .prd-list-wrap .list:nth-child(1) .list-text__title {
+  background-color: #fcffb2;
+  padding: 0 0.31vw;
 }
 .layout-body .section-content.mamonde-exclusive {
   margin-top: 7.81vw;
