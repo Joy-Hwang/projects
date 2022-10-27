@@ -52,11 +52,25 @@
     $computer.style.background = `url(${IMG_URL}) ${rspX[computerChoice]} 0`;
     $computer.style.backgroundSize = 'auto 200px';
   }
-  let intervalId = setInterval(changeComputerHand, 1000);
+  let intervalId = setInterval(changeComputerHand, 100);
 
     const scoreTable = {
         rock: 0,
         scissors: 1,
         paper: -1,
     };
+
+    let clickable = true;
+    let score = 0;
+    const clickButton = () => { //클릭버튼 함수
+        clearInterval(intervalId); //간격 click하면 화면멈춤
+        //화면 다시 활성화
+        setTimeout(()=> {
+            intervalId = setInterval(changeComputerHand, 100)
+        }, 1000);
+    };
+
+    $scissors.addEventListener('click', clickButton);
+    $rock.addEventListener('click', clickButton);
+    $paper.addEventListener('click', clickButton);
 </script>
