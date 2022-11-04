@@ -66,6 +66,7 @@
         clearInterval(intervalId); //간격 click하면 화면멈춤
         //화면 다시 활성화
         setTimeout(()=> {
+            clearInterval(intervalId);
             intervalId = setInterval(changeComputerHand, 100)
         }, 1000);
     };
