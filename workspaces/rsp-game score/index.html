@@ -82,14 +82,14 @@
       // 2, -1은 승리조건이고, -2, 1은 패배조건, 점수표 참고
       if ([2, -1].includes(diff)) {
         score += 1;
-        message = '이겼습니다';
+        message = '승리';
       } else if ([-2, 1].includes(diff)) {
         score -= 1;
-        message = '졌습니다';
+        message = '패배';
       } else {
-        message = '비겼습니다';
+        message = '무승부';
       }
-      $score.textContent = `${message}`;
+      $score.textContent = `${message} 총: ${score}점`;
       setTimeout(() => {
         clickable = true;
         intervalId = setInterval(changeComputerHand, 1000);
