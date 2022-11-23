@@ -30,7 +30,7 @@
     const $rock = document.querySelector("#rock");
     const $scissors = document.querySelector("#scissors");
     const $paper = document.querySelector("#paper");
-    const IMG_URL = './rsp-game/img/rsp.png';
+    const IMG_URL = './img/rsp.png';
     $computer.style.background = `url(${IMG_URL}) -464px 0`;
     $computer.style.backgroundSize = 'auto 200px';
 
@@ -53,7 +53,7 @@
     $computer.style.backgroundSize = 'auto 200px';
   }
   
-  let intervalId = setInterval(changeComputerHand, 100);
+  let intervalId = setInterval(changeComputerHand, 1000);
 
     const scoreTable = {
         rock: 0,
@@ -80,7 +80,7 @@
 
       let message;
       // 2, -1은 승리조건이고, -2, 1은 패배조건, 점수표 참고
-      if ([2, -1].includes(diff)) {
+      /* if ([2, -1].includes(diff)) {
         score += 1;
         message = '승리';
       } else if ([-2, 1].includes(diff)) {
@@ -88,11 +88,11 @@
         message = '패배';
       } else {
         message = '무승부';
-      }
+      } */
       $score.textContent = `${message} 총: ${score}점`;
       setTimeout(() => {
         clickable = true;
-        intervalId = setInterval(changeComputerHand, 100);
+        intervalId = setInterval(changeComputerHand, 1000);
       }, 1000);
     }
   }; 
