@@ -20,7 +20,7 @@
         <button id="rock" class="btn">바위</button>
         <button id="paper" class="btn">보</button>
     </div>
-    <div id="score">0</div>  
+    <div id="score"></div>  
 </body>
 </html>
 
@@ -31,7 +31,7 @@
     const $scissors = document.querySelector("#scissors");
     const $paper = document.querySelector("#paper");
     const IMG_URL = './img/rsp.png';
-    $computer.style.background = `url(${IMG_URL}) -464px 0`;
+    $computer.style.background = `url(${IMG_URL}) -440px 0`;
     $computer.style.backgroundSize = 'auto 200px';
 
     const rspX = {
@@ -43,13 +43,13 @@
     let computerChoice = 'scissors';
     const changeComputerHand = () => {
       if (computerChoice === 'rock') { // 바위면
-        computerChoice = 'scissors';
+        computerChoice = 'scissors'; //데이터는 가위로 바뀌고
       } else if (computerChoice === 'scissors') { // 가위면
-        computerChoice = 'paper';
+        computerChoice = 'paper'; //데이터는 보로 바뀌고
       } else if (computerChoice === 'paper') { // 보면
-        computerChoice = 'rock';
+        computerChoice = 'rock'; //데이터는 바위로 바뀌고
       }
-      $computer.style.background = `url(${IMG_URL}) ${rspX[computerChoice]} 0`;
+      $computer.style.background = `url(${IMG_URL}) ${rspX[computerChoice]} 0`; //화면도 바뀌고
       $computer.style.backgroundSize = 'auto 200px';
     }
     let intervalId = setInterval(changeComputerHand, 1000);
@@ -82,12 +82,12 @@
         // 2, -1은 승리조건이고, -2, 1은 패배조건, 점수표 참고
         if ([2, -1].includes(diff)) {
           score += 1;
-          message = '이겼습니다';
+          message = '이겼습니다!';
         } else if ([-2, 1].includes(diff)) {
           score -= 1;
-          message = '졌습니다';
+          message = '졌습니다!';
         } else {
-          message = '비겼습니다';
+          message = '비겼습니다!';
         }
         $score.textContent = `${message}`;
         setTimeout(() => {
