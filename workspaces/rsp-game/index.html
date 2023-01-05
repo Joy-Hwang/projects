@@ -35,11 +35,12 @@
     $computer.style.backgroundSize = 'auto 200px';
 
     const rspX = {
-    scissors: '0', // 가위
-    rock: '-220px', // 바위
-    paper: '-440px', // 보
+      scissors: '0', // 가위
+      rock: '-220px', // 바위
+      paper: '-440px', // 보
     };
 
+    //이미지 변환
     let computerChoice = 'scissors';
     const changeComputerHand = () => {
       if (computerChoice === 'rock') { // 바위면
@@ -60,12 +61,12 @@
       paper: -1,
     };
 
-    // clickButton 5번 호출, 인터벌 1번, 2번, 3번, 4번, 5번(얘만 intervalId)
-    //  그 다음에 버튼을 클릭하면 5번만 취소
+ 
     let clickable = true;
     let score = 0;
     const clickButton = (event) => {
       if (clickable) {
+        //이미지 변환 정지
         clearInterval(intervalId);
         clickable = false;
         // 점수 계산 및 화면 표시
@@ -90,6 +91,7 @@
           message = '비겼습니다!';
         }
         $score.textContent = `${message}`;
+        //화면 다시 활성화
         setTimeout(() => {
           clickable = true;
           intervalId = setInterval(changeComputerHand, 1000);
