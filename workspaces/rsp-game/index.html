@@ -34,6 +34,7 @@
     $computer.style.background = `url(${IMG_URL}) -440px 0`;
     $computer.style.backgroundSize = 'auto 200px';
 
+    //객체(rsp의 X좌표라는 공통점으로 묶기)
     const rspX = {
       scissors: '0', // 가위
       rock: '-220px', // 바위
@@ -51,26 +52,32 @@
         computerChoice = 'rock'; //데이터는 바위로 바뀌고
       }
       $computer.style.background = `url(${IMG_URL}) ${rspX[computerChoice]} 0`; //화면도 바뀌고
-      $computer.style.backgroundSize = 'auto 200px';
+      $computer.style.backgroundSize = 'auto 200px'; //사이즈를 다시 선언하지 않으면 리셋되기 때문에 반드시 다시 선언해줘야 함
     }
-    let intervalId = setInterval(changeComputerHand, 1000);
+    let intervalId = setInterval(changeComputerHand, 50);
 
     const scoreTable = {
       rock: 0,
       scissors: 1,
       paper: -1,
     };
-
  
     let clickable = true;
     let score = 0;
     const clickButton = (event) => {
       if (clickable) {
-        //이미지 변환 정지
-        clearInterval(intervalId);
-        clickable = false;
+        //버튼 눌렀을 때 화면 멈춤
+        clearInterval(intervalId); 
+        clickable = false; //버그 수정:타이머 시간 동안 버튼이 클릭되지 않게  -버그:여러번 클릭하면서 interval 값이 중복저장되어 빨리 움직이고 버튼 눌렀을 때 멈추지 않음
+
+        //타이머 설정해서 설정시간 지난 후 재실행
+        setTimeout(() => {
+          clickable = true; //버그 수정:타이머 시간 뒤 버튼 다시 클릭 되게
+          intervalId = setInterval(changeComputerHand, 50);
+        }, 1000);
+
         // 점수 계산 및 화면 표시
-        const myChoice = event.target.textContent === '바위' 
+        const myChoice = event.target.textContent === '바위' //내 선택(텍스트)이 바위면 데이터도 바위
           ? 'rock' 
           : event.target.textContent === '가위' 
             ? 'scissors' 
@@ -90,15 +97,9 @@
         } else {
           message = '비겼습니다!';
         }
-        $score.textContent = `${message}`;
-        //화면 다시 활성화
-        setTimeout(() => {
-          clickable = true;
-          intervalId = setInterval(changeComputerHand, 1000);
-        }, 1000);
+        $score.textContent = `${message}`;       
       }
     }; 
-
     $rock.addEventListener('click', clickButton);
     $scissors.addEventListener('click', clickButton);
     $paper.addEventListener('click', clickButton);
