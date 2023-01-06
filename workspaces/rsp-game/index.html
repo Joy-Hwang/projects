@@ -68,11 +68,11 @@
       if (clickable) {
         //버튼 눌렀을 때 화면 멈춤
         clearInterval(intervalId); 
-        clickable = false; //버그 수정:타이머 시간 동안 버튼이 클릭되지 않게  -버그:여러번 클릭하면서 interval 값이 중복저장되어 빨리 움직이고 버튼 눌렀을 때 멈추지 않음
+        clickable = false; //버그 수정:1초 동안 버튼이 클릭되지 않게  -버그:여러번 클릭하면서 interval 값이 중복저장되어 빨리 움직이고 버튼 눌렀을 때 멈추지 않음
 
-        //타이머 설정해서 설정시간 지난 후 재실행
+        //타이머 설정해서 설정시간(1초) 지난 후 재실행
         setTimeout(() => {
-          clickable = true; //버그 수정:타이머 시간 뒤 버튼 다시 클릭 되게
+          clickable = true; //버그 수정:1초 뒤 버튼 다시 클릭 되게
           intervalId = setInterval(changeComputerHand, 50);
         }, 1000);
 
