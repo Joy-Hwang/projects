@@ -56,7 +56,7 @@
     }
     let intervalId = setInterval(changeComputerHand, 50);
 
-    const scoreTable = {
+    const scoreTable = { //규칙 찾기 위해 가위, 바위, 보를 숫자로 변환
       rock: 0,
       scissors: 1,
       paper: -1,
@@ -82,12 +82,12 @@
           : event.target.textContent === '가위' 
             ? 'scissors' 
             : 'paper';
-        const myScore = scoreTable[myChoice];
-        const computerScore = scoreTable[computerChoice];
-        const diff = myScore - computerScore;
+        const myScore = scoreTable[myChoice]; //내 점수
+        const computerScore = scoreTable[computerChoice]; //컴퓨터 점수
+        const diff = myScore - computerScore; //내 점수에서 컴퓨터 점수를 빼서 나오는 점수대로 승부 결정
 
         let message;
-        // 2, -1은 승리조건이고, -2, 1은 패배조건, 점수표 참고
+        // 2, -1은 승리조건이고, -2, 1은 패배조건
         if ([2, -1].includes(diff)) {
           score += 1;
           message = '이겼습니다!';
