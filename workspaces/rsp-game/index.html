@@ -54,7 +54,7 @@
       $computer.style.background = `url(${IMG_URL}) ${rspX[computerChoice]} 0`; //화면도 바뀌고
       $computer.style.backgroundSize = 'auto 200px'; //사이즈를 다시 선언하지 않으면 리셋되기 때문에 반드시 다시 선언해줘야 함
     }
-    let intervalId = setInterval(changeComputerHand, 50);
+    let intervalId = setInterval(changeComputerHand, 100);
 
     const scoreTable = { //규칙 찾기 위해 가위, 바위, 보를 숫자로 변환
       rock: 0,
@@ -73,7 +73,7 @@
         //타이머 설정해서 설정시간(1초) 지난 후 재실행
         setTimeout(() => {
           clickable = true; //버그 수정:1초 뒤 버튼 다시 클릭 되게
-          intervalId = setInterval(changeComputerHand, 50);
+          intervalId = setInterval(changeComputerHand, 100);
         }, 1000);
 
         // 점수 계산 및 화면 표시
