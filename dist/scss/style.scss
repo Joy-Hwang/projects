@@ -8,7 +8,6 @@
   }
 
   /* Glitch styles */
-  //   --glitch-width: get-percent(276, 1200);
   --glitch-width: 23%;
 
   .glitch--style-1 {
@@ -782,7 +781,7 @@
 
     .grid__item--08 {
       grid-area: 3 / 2 / span 2 / span 2;
-      margin-bottom: get-percent(30, 410);
+      margin-bottom: 7.31%;
     }
 
     .glitch {
@@ -801,4 +800,8 @@
             } */
     }
   }
+}
+
+.aa {
+  font-size: 1rem;
 }
