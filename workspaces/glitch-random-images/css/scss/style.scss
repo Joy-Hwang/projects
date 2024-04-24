@@ -694,8 +694,8 @@
     padding-bottom: 76.27%;
     overflow: hidden;
     margin: 0 auto;
-    @include vw-l(border-radius, 10);
-    @include vw-s(border-radius, 10);
+    // @include vw-l(border-radius, 10);
+    // @include vw-s(border-radius, 10);
   }
 
   .glitch:hover {
