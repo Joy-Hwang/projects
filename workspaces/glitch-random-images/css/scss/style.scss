@@ -641,7 +641,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 14.16%;
+    grid-column-gap: 1.3888888889%;
   }
 
   .grid__item {
@@ -694,8 +694,7 @@
     padding-bottom: 76.27%;
     overflow: hidden;
     margin: 0 auto;
-    // @include vw-l(border-radius, 10);
-    // @include vw-s(border-radius, 10);
+    border-radius: 0.52vw;
   }
 
   .glitch:hover {
@@ -752,6 +751,7 @@
 
       .glitch {
         display: block;
+        border-radius: 1.33vw;
       }
     }
 
@@ -784,10 +784,10 @@
       margin-bottom: 7.31%;
     }
 
-    .glitch {
+    /* .glitch {
       padding-bottom: 35.36%;
     }
-
+ */
     .text-wrap {
       transform: translate(-17.46%, 294.52%);
       .ap-image {
