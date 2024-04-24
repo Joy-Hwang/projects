@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비디오 플레이리스트</title>
+    <style>
+      video {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <video
+      id="YunjoPlayer"
+      src="https://amc.apglobal.com/asset/384224417642/video_l0f3gljp7l0hja0mp0t3kb3n71?content-disposition=inline/yunjoessence_6th_film01_pc_kr_230224.mp4"
+      autoplay
+      muted
+      playsinline
+      controls
+    ></video>
+    <script type="text/javascript">
+      (function () {
+        //비디오 이어서 재생
+        var YunjoPlayer = document.getElementById("YunjoPlayer");
+        var tracks = {
+          list: [
+            "https://amc.apglobal.com/asset/384224417642/video_l0f3gljp7l0hja0mp0t3kb3n71?content-disposition=inline/yunjoessence_6th_film01_pc_kr_230224.mp4",
+            "https://amc.apglobal.com/asset/384224417642/video_8erquou29113fb99ce2e6fpa6i?content-disposition=inline/yunjoessence_6th_film02_pc_kr_230224.mp4",
+            "https://amc.apglobal.com/asset/384224417642/video_42opkkef9l1fjcsib4om5s271l?content-disposition=inline/yunjoessence_6th_film03_pc_kr_230224.mp4",
+          ],
+          index: 0,
+          next: function () {
+            if (this.index == this.list.length - 1) this.index = 0;
+            else {
+              this.index += 1;
+            }
+          },
+          play: function () {
+            return this.list[this.index];
+          },
+        };
+
+        const moViewport = 751;
+        let moFirstTrack =
+          "https://amc.apglobal.com/asset/384224417642/video_ek8c8h2gal3jjdfur4ok8lck4v?content-disposition=inline/yunjoessence_6th_film01_mo_kr_230224.mp4";
+        let pcFirstTrack =
+          "https://amc.apglobal.com/asset/384224417642/video_l0f3gljp7l0hja0mp0t3kb3n71?content-disposition=inline/yunjoessence_6th_film01_pc_kr_230224.mp4";
+        let moTracklist = [
+          moFirstTrack,
+          "https://amc.apglobal.com/asset/384224417642/video_nn3vbgj87h0c36lqmj8qqc4s0k?content-disposition=inline/yunjoessence_6th_film02_mo_kr_230224.mp4",
+          "https://amc.apglobal.com/asset/384224417642/video_7u3gbjp26l5gpb1t950a0gg811?content-disposition=inline/yunjoessence_6th_film03_mo_kr_230224.mp4",
+        ];
+        let pcTracklist = [
+          pcFirstTrack,
+          "https://amc.apglobal.com/asset/384224417642/video_8erquou29113fb99ce2e6fpa6i?content-disposition=inline/yunjoessence_6th_film02_pc_kr_230224.mp4",
+          "https://amc.apglobal.com/asset/384224417642/video_42opkkef9l1fjcsib4om5s271l?content-disposition=inline/yunjoessence_6th_film03_pc_kr_230224.mp4",
+        ];
+
+        if (window.innerWidth < moViewport) {
+          // mo
+          tracks.list = moTracklist;
+        } else {
+          //pc
+          tracks.list = pcTracklist;
+        }
+
+        //반응형
+        window.addEventListener("resize", function () {
+          if (window.innerWidth < moViewport) {
+            // mo
+            if (tracks.list[0] !== moFirstTrack) {
+              tracks.list = moTracklist;
+              YunjoPlayer.src = tracks.play();
+            }
+          } else {
+            //pc
+            if (tracks.list[0] !== pcFirstTrack) {
+              tracks.list = pcTracklist;
+              YunjoPlayer.src = tracks.play();
+            }
+          }
+        });
+
+        YunjoPlayer.onended = function () {
+          tracks.next();
+          YunjoPlayer.src = tracks.play();
+          YunjoPlayer.load();
+          YunjoPlayer.play();
+        };
+        YunjoPlayer.src = tracks.play();
+      })();
+    </script>
+  </body>
+</html>

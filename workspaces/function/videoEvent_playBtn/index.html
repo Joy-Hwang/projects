@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비디오 버튼재생</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="video-area">
+      <div class="video-wrap" data-ap2022-video="">
+        <div class="video-cover">
+          <button class="video-btn" type="button">
+            <picture>
+              <!-- mobile -->
+              <source
+                srcset="
+                  https://amc.apglobal.com/image/384224417642/image_hhahc8lipt6uj88ssqcavs283b/-FJPG/yunjo_essence_sampling_event_page_video_section_btn_sg_230315.jpg
+                "
+                media="(max-width: 640px)"
+              />
+              <!-- pc -->
+              <img
+                src="https://amc.apglobal.com/image/384224417642/image_hhahc8lipt6uj88ssqcavs283b/-FJPG/yunjo_essence_sampling_event_page_video_section_btn_sg_230315.jpg"
+                alt="Play"
+              />
+            </picture>
+          </button>
+        </div>
+        <div class="video-container">
+          <!-- pc video -->
+          <video
+            class="media event2022-video"
+            src="https://amc.apglobal.com/asset/384224417642/video_3oirutnl0945j6nefckm67qs17?content-disposition=inline/Sulwhasoo_FCAS_main_pc_sg_230227.mp4"
+            muted=""
+            playsinline=""
+            loop=""
+            controls=""
+          ></video>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
