@@ -511,8 +511,7 @@
 /* photo-wall */
 .ap-section--photo-wall img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 .ap-section--photo-wall .ap-section__body {

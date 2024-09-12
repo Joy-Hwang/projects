@@ -1,0 +1,27 @@
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  overflow-x: hidden;
+  color: rgb(29, 29, 31);
+  letter-spacing: -0.05em;
+  background-color: #fff;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.global-nav {
+  height: 44px;
+}
+.global-nav__link {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}/*# sourceMappingURL=blank.css.map */
