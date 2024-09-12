@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Navigation Bar</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <a href="#" class="logo">
+          <img src="./img/logo.svg" alt="logo" class="logo__img" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav_item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="#solutions" class="nav__link">Solutions</a>
+            </li>
+            <li class="nav_item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section active" id="home">
+        <h2 class="heading">Home</h2>
+      </section>
+      <section class="section" id="solutions">
+        <h2 class="heading">Solutions</h2>
+      </section>
+      <section class="section" id="projects">
+        <h2 class="heading">Projects</h2>
+      </section>
+      <section class="section" id="contact">
+        <h2 class="heading">Contact</h2>
+      </section>
+    </main>
+    <script defer src="./script.js"></script>
+  </body>
+</html>

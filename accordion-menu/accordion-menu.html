@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" body="width=device-width, initial-scale=1.0">
+    <title>아코디언 메뉴</title>
+    <style>
+        p {margin: 0}
+        .accordion {margin: 0 auto; width: 500px;}
+        button {border: none; padding: 10px;}
+        .question-wrap {margin-top: 20px;}
+        .heading, .body{display:block;}
+        .heading{text-decoration:none; color: #fff; background-color: #888; padding: 10px; transition: 0.2s; font-weight: bold;}
+        .heading:hover {background-color: #999;}
+        .body{padding: 30px; background-color: #ccc; transition: 0.2s}
+    </style>
+</head>
+<body>
+  <div class="accordion">
+    <button id="close-all">Button</button>
+    <div class="question-wrap">
+      <div class="question active">
+        <a href="#" class="heading">title01</a>
+        <p class="body">1</p>
+      </div>
+      <div class="question">
+        <a href="#" class="heading">title02</a>
+        <p class="body">2</p>
+      </div>
+      <div class="question">
+        <a href="#" class="heading">title03</a>
+        <p class="body">3</p>
+      </div>
+      <div class="question">
+        <a href="#" class="heading">title04</a>
+        <p class="body">4</p>
+      </div>
+      <div class="question">
+        <a href="#" class="heading">title05</a>
+        <p class="body">5</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+    //초기에 모든 메뉴 접기
+    //헤딩을 클릭하면 그 부모에 active 넣어주고, active가 있다면 그 밑에 자식 패널이 나타나도록
+    const closeAll = document.getElementById('close-all');
+    const question = document.querySelectorAll(".question");
+    const heading = document.querySelectorAll(".heading");
+    const body = document.querySelectorAll(".body");
+
+    //제목을 클릭하면 할 일
+    for(let i = 0; i < heading.length; i++) {//heading 마다 할 일
+      heading[i].addEventListener('click', function(event) {//어떤 것을 클릭했는 지 구분하도록 target을 쓸 것. target을 쓰려면 매개변수 필요
+        
+        for(let j = 0; j < question.length; j++) {//question 마다 할 일
+          question[j].classList.remove('active');//question마다 기존의 active 지우기
+          event.target.parentNode.classList.add('active'); //매개변수 가져와서 - 헤딩의 부모인 question에 active선언
+          showBody(); //body내용이 나오는 함수 선언
+        }
+        
+      });
+    }
+
+    function showBody() {
+      //body 모두 안보이도록
+      for(let k = 0; k < body.length; k++) {
+        body[k].style.display = 'none';
+      }
+
+      //active가 있는 heading의 자식(body)이 나타나도록
+      let activePanel = document.querySelector('.question.active .body')
+      activePanel.style.display = 'block';
+
+    }
+    showBody(); //열자마자 실행되도록 바깥에 다시 선언
+
+
+    //closeAll 버튼을 누르면 모든 body가 안보이도록 한다.
+    closeAll.addEventListener('click', function() {
+      for(let i = 0; i < body.length; i++) {
+        body[i].style.display = 'none';
+      }
+    });
+
+
+</script>
