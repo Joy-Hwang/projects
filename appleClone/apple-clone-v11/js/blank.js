@@ -17,7 +17,7 @@
         messageD: document.querySelector("#scroll-section-0 .main-message.d"),
       },
       values: {
-        messageA_opacoty: [0, 1],
+        messageA_opacity: [0, 1],
       },
     },
     {
@@ -71,22 +71,35 @@
     document.body.setAttribute("id", `show-scene-${currentScene}`);
   }
 
+  function calcValues(values, currentYoffset) {
+    let rv;
+
+    // 현재 씬(스크롤섹션)에서 스크롤된 범위를 비율로 구하기
+    let scrollRatio = currentYoffset / sceneInfo[currentScene].scorllHeight;
+    rv = scrollRatio * (values[1] - values[0]) + values[0]; // 1에서 0을 뺀 전체 범위에서 초기 값을 더해 시작 부분을 설정. -> 그 범위에 scrollRatio를 곱하면 스크롤된 범위 비율이 나옴!
+    return rv;
+  }
+
   function playAnimation() {
+    const objs = sceneInfo[currentScene].objs;
+    const values = sceneInfo[currentScene].values;
+    const currentYoffset = yOffset - prevScrollHeight;
     switch (currentScene) {
       case 0:
-        // console.log("0 play");
+        let messageA_opacity_in = calcValues(
+          values.messageA_opacity,
+          currentYoffset
+        );
+        objs.messageA.style.opacity = messageA_opacity_in;
         break;
 
       case 1:
-        // console.log("1 play");
         break;
 
       case 2:
-        // console.log("2 play");
         break;
 
       case 3:
-        // console.log("3 play");
         break;
     }
   }
