@@ -78,9 +78,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 35vh;
+  margin: 5px 0;
   height: 3em;
   font-size: 2.5rem;
-  margin: 5px 0;
+  opacity: 0;
 }
 .main-message p {
   line-height: 1.2;
@@ -153,7 +155,6 @@ a {
 .sticky-elem {
   display: none;
   position: fixed;
-  top: 0;
   left: 0;
   width: 100%;
 }
@@ -171,6 +172,7 @@ a {
   }
   .main-message {
     font-size: 4vw;
+    opacity: 0;
   }
   .main-message strong {
     font-size: 6rem;
