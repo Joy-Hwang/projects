@@ -16,8 +16,13 @@
         messageB: document.querySelector("#scroll-section-0 .main-message.b"),
         messageC: document.querySelector("#scroll-section-0 .main-message.c"),
         messageD: document.querySelector("#scroll-section-0 .main-message.d"),
+        canvas: document.querySelector("#video-canvas-0"),
+        context: document.querySelector("#video-canvas-0").getContext("2d"),
+        videoImages: [], // 이미지 담을 배열
       },
       values: {
+        videoImagesCount: 300, // 이미지 개수: 300장
+        imageSequence: [0, 299],
         messageA_opacity_in: [0, 1, { start: 0.1, end: 0.2 }], // start-end: 애니메이션이 시작되는 구간 (1을 전체 비율로 두고 소수점 지정)
         messageB_opacity_in: [0, 1, { start: 0.3, end: 0.4 }],
         messageC_opacity_in: [0, 1, { start: 0.5, end: 0.6 }],
@@ -92,6 +97,17 @@
     },
   ];
 
+  function setCanvasImages() {
+    let imgElem;
+    for (let i = 0; i < sceneInfo[0].values.videoImagesCount; i++) {
+      imgElem = new Image(); // 이미지 객체 만들기
+      imgElem.src = `./video/001/IMG_${6726 + i}.jpg`;
+      sceneInfo[0].objs.videoImages.push(imgElem);
+    }
+    console.log(sceneInfo[0].objs.videoImages);
+  }
+  setCanvasImages();
+
   function setLayout() {
     // 각 스크롤 섹션의 높이 세팅
     for (let i = 0; i < sceneInfo.length; i++) {
@@ -116,6 +132,9 @@
       }
     }
     document.body.setAttribute("id", `show-scene-${currentScene}`);
+
+    const heightRatio = window.innerHeight / 1080; // canvas 원래 높이 분의 윈도우 창 높이.
+    sceneInfo[0].objs.canvas.style.transform = `translate3d(-50%, -50%, 0) scale(${heightRatio})`; // 높이 비율에 맞게 canvas 크기를 맞춘다. 높이만 fit하는 것이 핵심!
   }
 
   function calcValues(values, currentYOffset) {
@@ -163,6 +182,12 @@
 
     switch (currentScene) {
       case 0:
+        let sequence = Math.round(
+          calcValues(values.imageSequence, currentYOffset) //0~299까지의 범위가 스크롤 된 높이에 맞게 나눠짐.
+        );
+        console.log(sequence);
+
+        objs.context.drawImage(objs.videoImages[sequence], 0, 0); //videoImages 배열의 sequence 인덱스의 이미지를 불러온다. x,y 좌표는 0,0으로
         if (scrollRatio <= 0.22) {
           // in
           objs.messageA.style.opacity = calcValues(
