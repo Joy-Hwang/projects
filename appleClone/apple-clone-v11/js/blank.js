@@ -59,18 +59,18 @@
         pinC: document.querySelector("#scroll-section-2 .c .pin"),
       },
       values: {
-        messageA_translateY_in: [20, 0, { start: 0.15, end: 0.2 }],
-        messageB_translateY_in: [30, 0, { start: 0.5, end: 0.55 }],
-        messageC_translateY_in: [30, 0, { start: 0.72, end: 0.77 }],
         messageA_opacity_in: [0, 1, { start: 0.15, end: 0.2 }],
         messageB_opacity_in: [0, 1, { start: 0.5, end: 0.55 }],
         messageC_opacity_in: [0, 1, { start: 0.72, end: 0.77 }],
-        messageA_translateY_out: [0, -20, { start: 0.3, end: 0.35 }],
-        messageB_translateY_out: [0, -20, { start: 0.58, end: 0.63 }],
-        messageC_translateY_out: [0, -20, { start: 0.85, end: 0.9 }],
+        messageA_translateY_in: [20, 0, { start: 0.15, end: 0.2 }],
+        messageB_translateY_in: [30, 0, { start: 0.5, end: 0.55 }],
+        messageC_translateY_in: [30, 0, { start: 0.72, end: 0.77 }],
         messageA_opacity_out: [1, 0, { start: 0.3, end: 0.35 }],
         messageB_opacity_out: [1, 0, { start: 0.58, end: 0.63 }],
         messageC_opacity_out: [1, 0, { start: 0.85, end: 0.9 }],
+        messageA_translateY_out: [0, -20, { start: 0.3, end: 0.35 }],
+        messageB_translateY_out: [0, -20, { start: 0.58, end: 0.63 }],
+        messageC_translateY_out: [0, -20, { start: 0.85, end: 0.9 }],
         pinB_scaleY: [0.5, 1, { start: 0.5, end: 0.55 }],
         pinC_scaleY: [0.5, 1, { start: 0.72, end: 0.77 }],
         pinB_opacity_in: [0, 1, { start: 0.5, end: 0.55 }],
@@ -120,6 +120,7 @@
 
   function calcValues(values, currentYOffset) {
     let rv;
+
     // 현재 씬(스크롤섹션)에서 스크롤된 범위를 비율로 구하기
     const scrollHeight = sceneInfo[currentScene].scrollHeight;
     const scrollRatio = currentYOffset / scrollHeight;
