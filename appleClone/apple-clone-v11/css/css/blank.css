@@ -71,8 +71,11 @@ a {
 }
 
 #scroll-section-0 h1 {
+  position: relative;
+  z-index: 5;
   font-size: 4rem;
   text-align: center;
+  top: -10vh;
 }
 
 .main-message {
@@ -117,6 +120,7 @@ a {
 .desc-message {
   width: 50%;
   font-weight: bold;
+  opacity: 0;
 }
 
 .pin {
