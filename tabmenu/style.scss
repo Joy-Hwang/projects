@@ -1,0 +1,76 @@
+$color_list: (#e4f6c3, #bedeff, #ffe2a1, #fcffa5, #d9dfff);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+.wrap {
+  width: 1920px;
+  margin-inline: auto;
+}
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #3d57db;
+  height: 60px;
+  &__item {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #afd4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        width: 1px;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &.active {
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
+.tab-content {
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+  }
+  &__title {
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+
+@for $i from 1 through length($color_list) {
+  .tab-content__box:nth-child(#{$i}) {
+    background-color: nth($color_list, $i);
+  }
+}
